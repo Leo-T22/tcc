@@ -1,0 +1,21 @@
+<div class="card mt-4">
+    <div class="card-header">
+    <h3> Gerenciamento de páginas</h3>
+  </div>
+  <div class="card-body">
+
+<a href="/manager_panel/managepage/add"><button class="btn btn-success mt-3">Adicionar página</button></a>
+<hr>
+{{#if pages}}
+{{#each pages}}
+<div>
+  <h3>{{title}}</h3>
+</div>
+
+
+{{/each}}
+{{else}}
+<h4>Nenhuma página cadastrada!</h4>
+{{/if}}
+</div>
+</div>

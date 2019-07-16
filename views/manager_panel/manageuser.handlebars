@@ -1,0 +1,26 @@
+<div class="card mt-4">
+    <div class="card-header">
+    <h3>
+    Gerenciamento de contas</h3>
+  </div>
+  <div class="card-body">
+
+<a href="/admin_panel/manageuser/add"><button class="btn btn-success">Adicionar conta de usuario</button></a>
+<hr>
+{{#each accounts}}
+<h4>{{user}}</h4>
+<a href="manageuser/edit/{{id}}"><button class="btn btn-success">Editar conta de usuario</button></a>
+
+
+<form action="/admin_panel/manageuser/delete" method="POST">
+<input type="hidden" name="id" value="{{_id}}">
+<button class="btn btn-success">Apagar Conta</button>
+</form>
+
+
+{{else}}
+<h4>Nenhum usuário cadastrado!</h4>
+{{/each}}
+
+</div>
+</div>

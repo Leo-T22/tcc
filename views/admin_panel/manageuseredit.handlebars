@@ -1,0 +1,14 @@
+<h3>Editar usuário</h3>
+<div class="card">
+    <div class="card-body">
+    <form action="/admin_panel/manageuser/edit" method="POST">
+    <input type="hidden" name="id" value="{{accounts._id}}"
+    <label for="nome">Novo nome de usuário: </label>
+        <input type="text" id="name" name="name" placeholder="Nome de usuário" class="form-control" value={{accounts.userName}}>
+    <label for="password">Nova senha: </label>
+        <input type="password" id="password" name="password" placeholder="Senha do usuário" class="form-control">
+        <br>
+    <button type="submit" class="btn btn-success">Editar usuário</button>
+    </form>
+</div>
+</div>
